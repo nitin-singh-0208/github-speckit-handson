@@ -54,9 +54,9 @@ As a listener, I want to visit an FAQ page to find answers to common questions a
 
 ### Edge Cases
 
-- What happens if the mocked episode data fails to load or is improperly formatted?
-- How does the layout adapt if the featured episode description is exceptionally long?
-- How does the UI behave on very small mobile screens or large ultra-wide monitors to maintain the "sleek" aesthetic?
+- **Data Loading Failure**: If the mocked episode data fails to load or is improperly formatted, the UI MUST display a graceful error state (e.g., "Episodes temporarily unavailable") without breaking the rest of the layout.
+- **Long Text Overflow**: If an episode description is exceptionally long, it MUST be truncated with an ellipsis (e.g., line-clamping to 3 lines) to maintain a clean layout.
+- **Extreme Viewports**: On very small mobile screens or large ultra-wide monitors, the UI MUST use responsive container widths and typography scaling to ensure the "sleek" aesthetic is preserved and content remains legible.
 
 ## Requirements *(mandatory)*
 
