@@ -1,0 +1,90 @@
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 3rem;
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tag {
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #ffffff, #a0a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.meta {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  margin: 0 0.5rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 2.5rem;
+}
+
+.player {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.audio {
+  width: 100%;
+  height: 54px;
+  border-radius: 27px;
+  outline: none;
+}
+
+.audio::-webkit-media-controls-panel {
+  background-color: #2a2a2a;
+}
+
+.audio::-webkit-media-controls-current-time-display,
+.audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}

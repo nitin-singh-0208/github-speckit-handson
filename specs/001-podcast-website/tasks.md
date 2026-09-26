@@ -4,8 +4,8 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Initialize Next.js project with App Router and TypeScript in the root directory
-- [ ] T002 [P] Clean up default Next.js boilerplate from `src/app/page.tsx` and `src/app/globals.css`
+- [X] T001 Initialize Next.js project with App Router and TypeScript in the root directory
+- [X] T002 [P] Clean up default Next.js boilerplate from `src/app/page.tsx` and `src/app/globals.css`
 
 ---
 
@@ -15,10 +15,10 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T003 [P] Create `Episode` and `FAQ` TypeScript interfaces in `src/data/types.ts`
-- [ ] T004 [P] Create mock data array of 20 episodes in `src/data/episodes.ts` (depends on T003)
-- [ ] T005 [P] Create mock data array of FAQs in `src/data/faqs.ts` (depends on T003)
-- [ ] T006 Setup global layout structure and basic navigation in `src/app/layout.tsx`
+- [X] T003 [P] Create `Episode` and `FAQ` TypeScript interfaces in `src/data/types.ts`
+- [X] T004 [P] Create mock data array of 20 episodes in `src/data/episodes.ts` (depends on T003)
+- [X] T005 [P] Create mock data array of FAQs in `src/data/faqs.ts` (depends on T003)
+- [X] T006 Setup global layout structure and basic navigation in `src/app/layout.tsx`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -32,8 +32,8 @@
 
 ### Implementation for User Story 1
 
-- [ ] T007 [P] [US1] Create `FeaturedEpisode` component in `src/components/FeaturedEpisode.tsx`
-- [ ] T008 [US1] Implement landing page in `src/app/page.tsx` to fetch featured episode from `episodes.ts` and render `FeaturedEpisode` component
+- [X] T007 [P] [US1] Create `FeaturedEpisode` component in `src/components/FeaturedEpisode.tsx`
+- [X] T008 [US1] Implement landing page in `src/app/page.tsx` to fetch featured episode from `episodes.ts` and render `FeaturedEpisode` component
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -47,9 +47,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T009 [P] [US2] Create `EpisodeCard` component in `src/components/EpisodeCard.tsx`
-- [ ] T010 [US2] Create episodes route and page in `src/app/episodes/page.tsx` to render all 20 episodes
-- [ ] T011 [US2] Update navigation in `src/app/layout.tsx` to include link to the episodes page
+- [X] T009 [P] [US2] Create `EpisodeCard` component in `src/components/EpisodeCard.tsx`
+- [X] T010 [US2] Create episodes route and page in `src/app/episodes/page.tsx` to render all 20 episodes
+- [X] T011 [US2] Update navigation in `src/app/layout.tsx` to include link to the episodes page
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -63,9 +63,9 @@
 
 ### Implementation for User Story 3
 
-- [ ] T012 [P] [US3] Create `FAQItem` component in `src/components/FAQItem.tsx`
-- [ ] T013 [US3] Create FAQ route and page in `src/app/faq/page.tsx` to render the FAQ list from `faqs.ts`
-- [ ] T014 [US3] Update navigation in `src/app/layout.tsx` to include link to the FAQ page
+- [X] T012 [P] [US3] Create `FAQItem` component in `src/components/FAQItem.tsx`
+- [X] T013 [US3] Create FAQ route and page in `src/app/faq/page.tsx` to render the FAQ list from `faqs.ts`
+- [X] T014 [US3] Update navigation in `src/app/layout.tsx` to include link to the FAQ page
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -75,9 +75,9 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T015 [P] Audit and fix responsive design layout across all pages and viewports in `src/app/globals.css` and component CSS modules
-- [ ] T016 [P] Verify edge case handling (e.g., text overflow in episode descriptions)
-- [ ] T017 Run validation scenarios outlined in `quickstart.md`
+- [X] T015 [P] Audit and fix responsive design layout across all pages and viewports in `src/app/globals.css` and component CSS modules
+- [X] T016 [P] Verify edge case handling (e.g., text overflow in episode descriptions)
+- [X] T017 Run validation scenarios outlined in `quickstart.md`
 
 ---
 

@@ -1,0 +1,38 @@
+.details {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.summary {
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.details[open] .summary::after {
+  transform: rotate(45deg);
+}
+
+.answer {
+  padding: 0 1.5rem 1.5rem;
+  color: #a0a0a0;
+  line-height: 1.6;
+}
