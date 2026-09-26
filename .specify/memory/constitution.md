@@ -1,50 +1,48 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version: Initial Draft -> 1.0.0
+Modified Principles:
+  - Added Principle 1: I. Simple Architecture
+  - Added Principle 2: II. Build Process
+  - Added Principle 3: III. Responsive Design
+  - Added Principle 4: IV. Performance First
+  - Added Principle 5: V. Semantic HTML
+Added Sections:
+  - Technical Constraints
+  - Development Workflow
+Removed Sections: None
+Follow-up TODOs: None
+-->
+# Static Web App Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Simple Architecture
+The web application MUST be served as static HTML/CSS/JS files without requiring a server-side backend at runtime.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Build Process
+All static assets MUST be pre-compiled during the build phase (e.g., using a static site generator or bundler).
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Responsive Design
+The web app MUST be usable on mobile, tablet, and desktop devices without breaking the layout.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Performance First
+Images and assets MUST be optimized. The app MUST aim for fast Largest Contentful Paint (LCP) and avoid render-blocking resources.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Semantic HTML
+The app MUST use semantic HTML5 elements and ensure basic accessibility (a11y) standards are met.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Technical Constraints
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+Use standard HTML/CSS/JS or a static site generator. No server-side rendering (SSR) or active databases are allowed for content serving.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development Workflow
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+1. Develop locally with a simple HTTP server.
+2. Verify the build output before deploying.
+3. Deploy the `dist` or `public` directory to static hosting (e.g., GitHub Pages, Vercel, Netlify).
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Any changes to the tech stack MUST preserve the static nature of the app. Adding backend requirements requires a formal amendment to this constitution. All pull requests MUST verify compliance with these static architecture constraints.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-09-26 | **Last Amended**: 2026-09-26
